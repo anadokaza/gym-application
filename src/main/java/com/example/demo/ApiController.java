@@ -15,4 +15,10 @@ public class ApiController {
         return "Test api ";
     }
 }
-//TODO SPRING DATA & REPO, READ ABOUT REST, CRUD
+
+//hosted on git
+//TODO SPRING DATA & REPO,
+// READ ABOUT REST - DONE (https://www.codecademy.com/article/what-is-rest)
+// MAKE THE CRUD - DONE (https://www.codecademy.com/article/what-is-crud)
+//thymeleaf as template?
+//n-tier (repository) atchitecture
