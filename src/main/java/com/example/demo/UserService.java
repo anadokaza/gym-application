@@ -10,8 +10,12 @@ import java.util.Optional;
 @Service
 public class UserService {
 
+    private final UserRepository userRepository;
+
     @Autowired
-    private UserRepository userRepository;
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     // Create
     public User createUser(User user) {
@@ -19,7 +23,7 @@ public class UserService {
     }
 
     // Read
-    public List<User> getAllUsers() {
+    public List<User> getAllUsers()  {
         return userRepository.findAll();
     }
 
