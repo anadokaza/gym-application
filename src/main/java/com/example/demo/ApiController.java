@@ -9,7 +9,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api")
 public class ApiController {
-    private final UserService userService;
+    private UserService userService;
 
     public ApiController(UserService userService) {
         this.userService = userService;
@@ -44,7 +44,7 @@ public class ApiController {
 // READ ABOUT REST - DONE (https://www.codecademy.com/article/what-is-rest)
 // MAKE THE CRUD - DONE (https://www.codecademy.com/article/what-is-crud)
 //thymeleaf as template?
-//n-tier (repository) atchitecture
+//n-tier (repository) architecture
 
 
 //zosto go nema flyway i run as na pom.xml
